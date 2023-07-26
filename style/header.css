@@ -1,0 +1,38 @@
+.cabecalho {
+    background-color: var(--cor-branca);
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+.cabecalho__imagem {
+    padding: 1em;
+}
+.cabecalho__texto{
+    display: none;
+}
+
+.cabecalho__paragrafo{
+    display: none;
+}
+
+@media screen and (min-width: 768px)  {
+    .cabecalho__texto{
+        display: block;
+        font-size: 2em;
+        font-weight: bold;
+        align-self: center;
+    }
+}
+@media screen and (min-width: 1024px){
+    .cabecalho{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cabecalho__paragrafo{
+        display: flex;
+        font-size: 1.5em; 
+    }
+}
